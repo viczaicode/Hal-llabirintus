@@ -20,4 +20,4 @@ class Jatekos():
         self.szerencse = random.randint(1,6) + 6
     
     def __str__(self):
-        return f"➝ Ügyességed: {self.ugyesseg}\n ✦ ➝ Életerőd: {self.eletero} ❤️\n ➝ Szerencséd: {self.szerencse} 🍀"
+        return f"➝ Ügyességed: {self.ugyesseg} ✦\n ➝ Életerőd: {self.eletero} ❤️\n ➝ Szerencséd: {self.szerencse} 🍀"
