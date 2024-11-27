@@ -22,11 +22,10 @@ class Jatekos():
     def set_szerencse(self):
         self.szerencse = random.randint(1,6) + 6
     
-    def ketto_kockadobas_osszegadva(self):
+    def ketto_kockadobas_osszeadva(self):
         dobas1:int = self.set_ugyesseg()
         dobas2:int = self.set_ugyesseg()
-
-        return dobas1 + dobas2
+        self.set_ugyesseg = dobas1 + dobas2 
         
     def __str__(self):
         return f"➝ Ügyességed: {self.ugyesseg} ✦\n ➝ Életerőd: {self.eletero} ❤️\n ➝ Szerencséd: {self.szerencse} 🍀"
