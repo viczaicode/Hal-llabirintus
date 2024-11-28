@@ -60,6 +60,7 @@ def hetedik_lepes():
         elso_lepes()
         masodik_lepes()
         harmadik_lepes()
+    print(f"{milanius.nev}életereje: {milanius.eletero} \n {barlangi.nev} életereje {barlangi.eletero}!")
 
 
 def labirintus():
@@ -96,6 +97,12 @@ def labirintus():
                 oldalak.Oldal137()  
             elif valasztas == "387":
                 oldalak.Oldal387()
+                print("Elkezdesz harcolni a barlangi emberrel...")
+                elso_lepes()
+                masodik_lepes()
+                harmadik_lepes()
+                hatodik_lepes()
+                hetedik_lepes()
         elif valasztas == "56":
             oldalak.Oldal56()
             valasztas = input("Átmászol (lapozz 373-ra) vagy kettévágod (lapozz 215-re)? ➝ ")
