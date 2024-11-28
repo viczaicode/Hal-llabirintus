@@ -16,7 +16,6 @@ class Jatekos():
     def set_ugyesseg(self):
         self.ugyesseg = random.randint(1,6) + 6
        
-    
     def set_eletero(self):
         self.eletero = random.randint(1,6) + 12
     
