@@ -1,3 +1,3 @@
 import jatekmenet
 
-jatekmenet.alagut_kaland()
+jatekmenet.labirintus()
