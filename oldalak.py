@@ -1,5 +1,3 @@
-from jatekos import Jatekos
-
 def Oldal1():
     print("Miután öt percet haladtál lassan az alagútban, egy kőasztalhoz érsz, amely a bal oldali fal mellett áll. Hat doboz van rajta, egyikükre a te neved festették. Ha ki akarod nyitni a dobozt, lapozz a 270-re. Ha inkább tovább haladsz észak felé, lapozz a 66-ra.")
 
@@ -27,5 +25,9 @@ def Oldal373():
 def Oldal387():
     print("Hallod, hogy elölről súlyos lépések közelednek. Egy széles, állatbőrökbe öltözött, kőbaltás, primitív lény lép elő. Ahogy meglát, morog, a földre köp, majd a kőbaltát felemelve közeledik, és mindennek kinéz, csak barátságosnak nem. Előhúzod kardodat, és felkészülsz, hogy megküzdj a Barlangi Emberrel.")
 
-def oldal999():
+def Oldal999():
+    print("============================== \n")
+    print("============================== \n")
+    print("============================== \n")
     print("GRATULÁLUNK! Megtaláltad a Labirintus titkos kamráját, ami tele van arannyal és egy térképpel, ami kivezet a labirintusból! \n A kamra ajtajára egy kérdés van írva, ami így szól: Ki a legeslegjobb programozó? \n Két opció van megjelölve: Levi / Nem Levi [Óvatosan válassz, a rossz válasz azonnali halált okozhat!] \n Ha inkább otthagyod, lapozz az első olalra!")
+

@@ -70,32 +70,53 @@ def hetedik_lepes():
         harmadik_lepes()
     print(f"{milanius.nev}életereje: {milanius.eletero} \n {barlangi.nev} életereje {barlangi.eletero}!")
 
+def easter_egg():
+    oldalak.Oldal999()
+    valasz = input("Levi / NemLevi / 1 ?")
+    if valasz == "Levi":
+        milanius.arany += 999
+        print(f"{milanius.nev} jelenlegi aranya: {milanius.arany}💰")
+        oldalak.Oldal1()
+    elif valasz == "NemLevi":
+        print(f"Rossz válasz! {milanius.nev} karóba lett húzva!")
+        milanius.eletero -=20
+    elif valasz == "1":
+        oldalak.Oldal1()
+
 def labirintus():
+    e:int = 0
     while (milanius.eletero >= 1 or barlangi.eletero >= 1):
+        if (barlangi.eletero <= 0):
+            print(f"{barlangi.nev} meghalt, {milanius.nev} legyőzte a Labirintust!")
+            break
+        elif (milanius.eletero <= 0):
+            print(f"{milanius.nev} újabb áldozata lett a Halállabirintusnak!")
+            break
         valasztas = input("A dobozt kinyitod (lapozz 270-re) vagy továbbmész (lapozz 66-ra)? ➝ ")
         if valasztas == "270":
+            e += 1
+            if (e == 10 or e == 20):
+                easter_egg()
             oldalak.Oldal270()
             milanius.arany += 3
             print("Begyűjtöd az aranyat!\n")
             oldalak.Oldal66()
             valasztas = input("Nyugat (lapozz 293-ra) vagy Kelet (lapozz 56-ra)? ➝ ")
             if valasztas == "293":
+                e += 1
+                if (e == 10 or e == 20):
+                    easter_egg()
                 oldalak.Oldal293()
                 valasztas = input("Ha továbbmész nyugat felé a lábnyomokat követve, lapozz a 137-re. Ha inkább észak felé mész a harmadik pár lábnyom után, lapozz a 387-re. ➝ ")
                 if valasztas == "137":
-                    oldalak.Oldal137()
-                    oldalak.oldal999()
-                    valasz = input("Levi / NemLevi / 1 ?")
-                    if valasz == "Levi":
-                        milanius.arany += 999
-                        print(f"{milanius.nev} jelenlegi aranya: {milanius.arany}💰")
-                        oldalak.Oldal1()
-                    elif valasz == "NemLevi":
-                        print(f"Rossz válasz! {milanius.nev} karóba lett húzva!")
-                        break
-                    elif valasz == "1":
-                        oldalak.Oldal1()  
+                    e += 1
+                    if (e == 10 or e == 20):
+                        easter_egg()
+                    oldalak.Oldal137() 
                 elif valasztas == "387":
+                    e += 1
+                    if (e == 10 or e == 20):
+                        easter_egg()
                     oldalak.Oldal387()
                     print("Elkezdesz harcolni a barlangi emberrel...")
                     elso_lepes()
@@ -106,22 +127,43 @@ def labirintus():
                         print(f"{milanius.nev} újabb áldozata lett a Halállabirintusnak!")
                         break
             elif valasztas == "56":
+                e += 1
+                if (e == 10 or e == 20):
+                        easter_egg()
                 oldalak.Oldal56()
                 valasztas = input("Átmászol (lapozz 373-ra) vagy kettévágod (lapozz 215-re)? ➝ ")
                 if valasztas == "373":
+                    e += 1
+                    if (e == 10 or e == 20):
+                        easter_egg()
                     oldalak.Oldal373()
                 elif valasztas == "215":
+                    e += 1
+                    if (e == 10 or e == 20):
+                        easter_egg()
                     oldalak.Oldal215()
                     milanius.eletero - 2
         elif valasztas == "66":
+            e += 1
+            if (e == 10 or e == 20):
+                        easter_egg()
             oldalak.Oldal66()
             valasztas = input("Nyugat (lapozz 293-ra) vagy Kelet (lapozz 56-ra)? ➝ ")
             if valasztas == "293":
+                e += 1
+                if (e == 10 or e == 20):
+                        easter_egg()
                 oldalak.Oldal293()
                 valasztas = input("Ha továbbmész nyugat felé a lábnyomokat követve, lapozz a 137-re. Ha inkább észak felé mész a harmadik pár lábnyom után, lapozz a 387-re. ➝ ")
                 if valasztas == "137":
+                    e += 1
+                    if (e == 10 or e == 20):
+                        easter_egg()
                     oldalak.Oldal137()  
                 elif valasztas == "387":
+                    e += 1
+                    if (e == 10 or e == 20):
+                        easter_egg()
                     oldalak.Oldal387()
                     print("Elkezdesz harcolni a barlangi emberrel...")
                     elso_lepes()
@@ -132,11 +174,20 @@ def labirintus():
                         print(f"{milanius.nev} újabb áldozata lett a Halállabirintusnak!")
                         break
             elif valasztas == "56":
+                e += 1
+                if (e == 10 or e == 20):
+                        easter_egg()
                 oldalak.Oldal56()
                 valasztas = input("Átmászol (lapozz 373-ra) vagy kettévágod (lapozz 215-re)? ➝ ")
                 if valasztas == "373":
+                    e += 1
+                    if (e == 10 or e == 20):
+                        easter_egg()
                     oldalak.Oldal373()
                 elif valasztas == "215":
+                    e += 1
+                    if (e == 10 or e == 20):
+                        easter_egg()
                     oldalak.Oldal215()
                     milanius.eletero - 2
 
